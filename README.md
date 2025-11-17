@@ -1,0 +1,1 @@
+The website for the Society Of Computer and Information Sciences @ UofG

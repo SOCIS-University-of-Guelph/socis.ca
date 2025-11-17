@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  
+  --font-main: "Inter", sans-serif;
+
+   /* placeholder colour palette */
+  --color-mainblack: #131112;
+  --color-mainwhite: #f7f7ff;
+  --color-mainpurple: #6d28d9;
+
+}
+
+@layer utilities {
+
+  .font-main {
+
+    font-family: var(--font-main);
+
+  }
+
+}
+
+body {
+
+  @apply bg-mainblack;
+  font-family: var(--font-main);
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
