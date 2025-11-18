@@ -1,23 +1,31 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NavigationBar from "./components/NavigationBar";
 
 export const metadata: Metadata = {
 
   title: "SOCIS | Home",
-  description: "Homepage for SOCIS.ca",
+  description: "TBD", // @todo this description
   
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 
   return (
 
     <html lang="en">
 
-      <body>
+      <head/>
 
-        {children}
+      <body className="bg-mainblack h-screen">
+
+        <NavigationBar />
+        <main>
+
+          {children}
+
+        </main>
 
       </body>
 
@@ -26,3 +34,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   );
 
 }
+
+
