@@ -1,0 +1,61 @@
+00001000 Starting Address
+Assembler used: EASy68K Editor/Assembler v5.16.01
+Created On: 2025-11-19 3:26:17 AM
+
+00000000                             1  *-----------------------------------------------------------
+00000000                             2  * Title      : polling
+00000000                             3  * Written by : Syed Maroof Hussain
+00000000                             4  * Date       : 11-19-2025
+00000000                             5  * Description: polling
+00000000                             6  * Section    : 0102
+00000000                             7  *-----------------------------------------------------------
+00000000                             8  * I have exclusive control over this submission via my password.
+00000000                             9  * By including this statement in this header, I certify that
+00000000                            10  * I have read and understood the University policy in academic
+00000000                            11  * integrity and I assert that this work is my own. I have
+00000000                            12  * not used any unapproved external resources including LLM
+00000000                            13  * models. Furthermore, I certify that is assignment was
+00000000                            14  * prepared by me specifically for this course.
+00000000                            15  
+00000000  =00E00000                 16  HARDWARE    EQU $E00000
+00001000                            17      ORG    $1000
+00001000                            18  START:                  ; first instruction of program
+00001000                            19      
+00001000                            20      ; display hardware window
+00001000  303C 0020                 21      MOVE #32, D0
+00001004  4281                      22      CLR.L D1
+00001006  4E4F                      23      TRAP #15
+00001008  43F9 00E00000             24      LEA HARDWARE, A1
+0000100E  4229 0010                 25      CLR.B $10(A1)   ; all 8 leds off initially
+00001012                            26      
+00001012                            27  LOOP:
+00001012                            28  
+00001012  1429 0012                 29      MOVE.B $12(A1), D2  ; stores the switches value into d2
+00001016                            30  
+00001016                            31  POLL:
+00001016                            32  
+00001016  1229 0014                 33      MOVE.B $14(A1), D1 ; move state of buttons into d1
+0000101A  C23C 0080                 34      AND.B #%10000000, D1 ; 
+0000101E  B23C 0000                 35      CMP.B #%00000000, D1
+00001022  66F2                      36      BNE POLL    ; loop if d1 != 0, loop until leftmost push button is pressed (= 0)
+00001024                            37      ;else
+00001024  1342 0010                 38      MOVE.B D2, $10(A1) ; show in leds
+00001028  60E8                      39      BRA LOOP    ; repeat
+0000102A                            40  
+0000102A  FFFF FFFF                 41      SIMHALT             ; halt simulator
+0000102E                            42  
+0000102E                            43  * Put variables and constants here
+0000102E                            44  
+0000102E                            45      END    START        ; last line of source
+
+No errors detected
+No warnings generated
+
+
+SYMBOL TABLE INFORMATION
+Symbol-name         Value
+-------------------------
+HARDWARE            E00000
+LOOP                1012
+POLL                1016
+START               1000

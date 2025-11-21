@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-mainblack h-screen">
 
         <NavigationBar />
+        
         <main>
 
           {children}
