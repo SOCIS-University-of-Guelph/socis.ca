@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
+// @todo: fix logo stuttering upon refresh
+
 export default function NavigationBar() {
 
   const [open, setOpen] = useState(false);
