@@ -5,10 +5,12 @@ import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
 // @todo: fix logo stuttering upon refresh
+// @todo: navbar looks kinda bad on some screens, e.g. nest and nest hub max
+// @todo: make the mobile menu dropdown go over like tooltip
 
 export default function NavigationBar() {
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // for mobile menu
 
   const navigationLinks = [
 
