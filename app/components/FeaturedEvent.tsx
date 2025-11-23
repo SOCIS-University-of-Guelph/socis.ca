@@ -19,7 +19,7 @@ export default function FeaturedEvent({titleOfEvent, descriptionOfEvent, isVideo
 
       <>
 
-        { isVideo ? (<video src={mediaSource} autoPlay loop muted playsInline className="absolute w-full h-full object-cover"/>) : (<img src={mediaSource}/>)}
+        { isVideo ? (<video src={mediaSource} autoPlay loop muted playsInline className="absolute w-full object-cover h-full"/>) : (<img src={mediaSource}/>)}
 
         <div className="absolute inset-0 bg-black/60"></div> {/* black overlay for videos do not remove */}
 

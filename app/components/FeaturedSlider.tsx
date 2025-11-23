@@ -4,6 +4,7 @@ import FeaturedEvent from './FeaturedEvent';
 import { FaPauseCircle, FaPlayCircle, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState } from 'react';
 // @todo: add autoplay
+// @todo: the switching between slides is kind of glitchy fix it 
 export default function FeaturedSlider() {
 
   const [isPaused, setIsPaused] = useState(false); // for featured slider
