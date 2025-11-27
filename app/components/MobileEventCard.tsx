@@ -33,21 +33,21 @@ export default function MobileEventCard( {title, date, time, location, href, med
 
         <div className="flex items-center gap-2">
 
-          <ImCalendar size={16} className="text-blue-400" />
+          <ImCalendar size={16} className="text-mainwhite" />
           <span>{date}</span>
 
         </div>
 
         <div className="flex items-center gap-2">
 
-          <FaClock size={16} className="text-blue-400" />
+          <FaClock size={16} className="text-mainwhite" />
           <span>{time}</span>
 
         </div>
 
         <div className="flex items-center gap-2">
 
-          <CiLocationOn size={18} className="text-blue-400" />
+          <CiLocationOn size={16} className="text-mainwhite" />
           <span>{location}</span>
 
         </div>

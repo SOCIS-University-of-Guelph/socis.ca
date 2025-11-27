@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/NavigationBar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
 
@@ -28,6 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         </main>
 
+        <Footer/>
+        
       </body>
 
     </html>

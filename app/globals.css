@@ -31,6 +31,24 @@ body {
 
 html {
 
-	scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-behaviour: 
+  
+}
+
+html::-webkit-scrollbar { /* chrome safari etc */
+  display: none;
+}
+
+html {
+
+  scrollbar-width: none; /* firefox */
 
 }
+
+html {
+
+  -ms-overflow-style: none; /* microsoft apps */
+
+}
+

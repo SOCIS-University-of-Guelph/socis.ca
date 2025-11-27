@@ -39,7 +39,7 @@ const eventInfoProps = {
 const iconProps = {
 
   size: 22,
-  className: "text-blue-600",
+  className: "text-mainwhite",
 
 };
 
@@ -49,7 +49,7 @@ export default function EventCard( {title, description, date, time, location, hr
 
   return (
 
-    <div className="w-md bg-mainblack rounded-lg overflow-hidden shadow-lg transition duration-300">
+    <div className="w-110 hover:scale-102 bg-mainblack rounded-lg overflow-hidden shadow-lg transition duration-300">
       
       <div className="w-full h-48 relative">
 
@@ -59,7 +59,7 @@ export default function EventCard( {title, description, date, time, location, hr
 
       <div className="p-5 text-mainwhite flex flex-col gap-4 h-full">
 
-        <div className="h-12 flex flex-wrap gap-2">
+        <div className="h-12 flex flex-wrap gap-2 justify-center">
 
           {perks.slice(0, 3).map((perk, i) => {
 
@@ -67,7 +67,7 @@ export default function EventCard( {title, description, date, time, location, hr
 
             return (
 
-              <span key={i} className={`flex items-center gap-2 px-3 py-2 text-sm font-semibold rounded-lg text-mainwhite ${perk.color}`}>
+              <span key={i} className={`flex items-center gap-2 px-3 text-sm font-semibold rounded-lg text-mainwhite ${perk.color}`}>
 
                 {Icon && <Icon size={20} />}
                 {perk.text}
@@ -80,7 +80,7 @@ export default function EventCard( {title, description, date, time, location, hr
 
         </div>
 
-        <div className="h-10 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <div className="h-10 flex flex-wrap gap-x-6 gap-y-2 text-sm justify-center">
 
           <div className={wrapperClass}>
 
