@@ -1,7 +1,7 @@
 # Society of Computer & Information Sciences (SOCIS) — University of Guelph
 
 <p align="center">
-  <img src="./socis_logo.png" alt="SOCIS Logo" width="180" />
+  <img src="/socis_logo.png" alt="SOCIS Logo" width="180" />
 </p>
 
 The official website for the **Society of Computer and Information Sciences (SOCIS)** at the **University of Guelph**.
@@ -15,9 +15,9 @@ SOCIS is the academic society representing students in the Bachelor of Computing
 SOCIS directly funds and supports several computing-focused clubs at UofG, including:
 
 <p align="center">
-  <img src="./gccc_logo.png" alt="Guelph Cloud Computing Club" width="120" />
-  <img src="./gdsc_logo.png" alt="Google Developer Groups Guelph" width="120" />
-  <img src="./gcss_logo.png" alt="Guelph Cyber Security Society" width="120" />
+  <img src="/gccc_logo.png" alt="Guelph Cloud Computing Club" width="120" />
+  <img src="/gdsc_logo.png" alt="Google Developer Groups Guelph" width="120" />
+  <img src="/gcss_logo.png" alt="Guelph Cyber Security Society" width="120" />
 </p>
 
 - **Guelph Cloud Computing Club (GCCC)**  
