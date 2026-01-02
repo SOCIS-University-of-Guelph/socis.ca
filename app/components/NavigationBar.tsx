@@ -18,7 +18,6 @@ export default function NavigationBar() {
     { name: "Events", href: "/events" },
     { name: "Clubs", href: "/clubs" },
     { name: "Featured", href: "/featured" },
-    { name: "Resources", href: "/resources" },
     { name: "Contact", href: "/contact" },
     
   ];

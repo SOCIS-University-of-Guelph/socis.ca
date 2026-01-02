@@ -56,7 +56,7 @@ export default function Footer() {
           <div>
 
             <Image alt="SOCIS Logo" src="/socis_logo.png" width={150} height={30} className="select-none"/>
-            <p className="text-md mt-3 font-bold">Society of Computing and Information Sciences</p>
+            <p className="text-md mt-3 font-bold">Society of Computer and Information Sciences</p>
             <p className="text-sm opacity-60 mt-2 max-w-xs">The largest CS academic society at the University of Guelph!</p>
 
           </div>
@@ -92,7 +92,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-8 border-t border-white/10 pt-4 text-sm opacity-60">© {new Date().getFullYear()} SOCIS</div>
+        <div className="mt-8 border-t border-white/10 pt-4 text-sm opacity-60">© {new Date().getFullYear()} Society Of Computer & Information Scienes</div>
 
       </div>
 

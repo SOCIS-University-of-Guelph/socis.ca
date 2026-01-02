@@ -4,8 +4,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { CiPizza } from "react-icons/ci";
 import { LuCupSoda } from "react-icons/lu";
 import { MdMoneyOff } from "react-icons/md";
-import EventCard from "./EventCard";
-import MobileEventCard from "./MobileEventCard";
+import EventCard from "../components/EventCard";
+import MobileEventCard from "../components/MobileEventCard";
 
 const events = [
   {
@@ -49,33 +49,43 @@ const events = [
   },
 ];
 
-export default function EventsSection() {
+export default function EventsPage() {
   return (
     <section className="w-full text-mainblack">
-      <div className="max-w-8xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 ">
 
-        <div className="flex items-center gap-6 mb-8">
-          <h2 className="text-7xl font-extrabold tracking-tight">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-8">
+          <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight">
             Upcoming Events
           </h2>
 
           <Link
-            href="/events"
-            className="flex items-center gap-5 px-8 py-4 bg-mainblack hover:bg-mainblack/90 text-mainwhite font-semibold rounded-lg transition-colors duration-200"
+            href="https://discord.gg/hWJAeq9R"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              flex items-center justify-center gap-3
+              px-6 py-3
+              sm:px-8 sm:py-4
+              bg-mainblack hover:bg-mainblack/90
+              text-mainwhite font-semibold
+              rounded-lg transition-colors
+              text-base sm:text-2xl
+            "
           >
-            <span className="text-2xl">View All Events</span>
-            <FaExternalLinkAlt size={24} />
+            Latest Updates on Discord
+            <FaExternalLinkAlt size={20} />
           </Link>
         </div>
 
-        <p className="text-lg text-mainblack/70 max-w-4xl mb-12">
+        <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mb-12">
           SOCIS hosts academic, social, and professional events throughout the
-          year, often in collaboration with our umbrella clubs. Join us to learn,
-          connect, and be part of the computing community at the University of
-          Guelph.
+          year. Join us to learn, connect, and engage with the computing community
+          at the University of Guelph.
         </p>
 
-        <div className="hidden sm:flex flex-wrap gap-8 justify-start">
+        <div className="hidden sm:flex flex-wrap gap-8 justify-center items-center">
+
           {events.map((event) => (
             <EventCard
               key={event.title}
@@ -91,7 +101,7 @@ export default function EventsSection() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-8 sm:hidden">
+        <div className="flex flex-col gap-6 sm:hidden">
           {events.map((event) => (
             <MobileEventCard
               key={`${event.title}-mobile`}

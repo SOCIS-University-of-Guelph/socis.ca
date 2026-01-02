@@ -1,5 +1,7 @@
 import FeaturedSlider from "./components/FeaturedSlider";
 import EventsSection from "./components/EventsSection";
+import ClubsSection from "./components/ClubsSection";
+
 
 export default function Home() {
   
@@ -9,6 +11,7 @@ export default function Home() {
     
 			<FeaturedSlider/>
 			<EventsSection/>
+			<ClubsSection/>
     
 		</>
   

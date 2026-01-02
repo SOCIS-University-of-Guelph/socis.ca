@@ -18,11 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       <head/>
 
-      <body className="bg-mainblack h-screen">
+      <body className="bg-mainblack min-h-screen flex flex-col">
 
         <NavigationBar />
         
-        <main>
+        <main className="flex-1">
 
           {children}
 

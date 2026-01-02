@@ -21,7 +21,7 @@ export default function FeaturedSlider() {
       descriptionOfEvent: "CIS students packed the seminar hall to network with several professors who told them how simple it is to begin student research!",
       isVideo: true,
       mediaSource: "/socisresearchmixer.mp4",
-      href: "/resources",
+      href: "/events",
       postingDate: "Nov 21, 2025",
       
     },
