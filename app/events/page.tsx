@@ -3,7 +3,24 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaDiscord, FaInstagram } from "react-icons/fa";
 import EventCard from "../components/EventCard";
 
-const events = [
+type EventLink = {
+  label: string;
+  href: string;
+  type: "discord" | "instagram" | "website";
+};
+
+type Event = {
+  name: string;
+  description: string;
+  date: string;
+  time: string;
+  location: string;
+  mediaSource?: string;
+  links: EventLink[];
+};
+
+
+const events: Event[] = [
   {
     name: "Intro To The Society Of Computer & Information Sciences (SOCIS)",
     description:
