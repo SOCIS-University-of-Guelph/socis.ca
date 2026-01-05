@@ -78,7 +78,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Contact / Socials (Restored to Original Styling) */}
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Get Involved</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

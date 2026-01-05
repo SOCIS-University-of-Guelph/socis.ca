@@ -8,7 +8,7 @@ export default function CommunityBanner() {
       <div className="relative w-full h-160 rounded-3xl overflow-hidden shadow-sm">
         {/* Replaced div style with Next.js Image */}
         <Image
-          src="/community.jpg"
+          src="/community.png"
           alt="Community at SOCIS"
           fill
           className="object-cover"
