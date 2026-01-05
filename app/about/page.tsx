@@ -25,7 +25,7 @@ export default function AboutPage() {
           {/* Image */}
           <div className="flex justify-center">
             <Image
-              src="/images.jfif"
+              src="/img_5716.jpg"
               alt="SOCIS Logo"
               width={360}
               height={360}

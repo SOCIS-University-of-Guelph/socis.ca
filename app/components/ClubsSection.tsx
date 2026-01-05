@@ -1,24 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CommunityBanner() {
   return (
     <section className="w-full px-6 pb-10">
-      <div
-        className="
-          relative
-          w-full
-          h-160
-          rounded-3xl
-          overflow-hidden
-          shadow-sm
-        "
-      >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/community.jpg')" }}
+      <div className="relative w-full h-160 rounded-3xl overflow-hidden shadow-sm">
+        {/* Replaced div style with Next.js Image */}
+        <Image
+          src="/community.jpg"
+          alt="Community at SOCIS"
+          fill
+          className="object-cover"
+          priority
         />
 
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="relative z-10 h-full flex items-center">
@@ -35,17 +32,7 @@ export default function CommunityBanner() {
 
             <Link
               href="/clubs"
-              className="
-                inline-block
-                bg-white
-                text-black
-                font-semibold
-                px-6
-                py-3
-                rounded-lg
-                hover:bg-white/80
-                transition
-              "
+              className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-white/80 transition"
             >
               Learn About Our Clubs →
             </Link>
