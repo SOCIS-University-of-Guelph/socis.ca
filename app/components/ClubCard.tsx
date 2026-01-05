@@ -23,7 +23,6 @@ export default function ClubCard({
 }: ClubCardProps) {
   return (
     <div className="group w-full max-w-sm bg-mainblack border border-white/10 rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
-
       <div className="relative h-48 w-full bg-mainblack">
         <div className="absolute inset-6">
           <Image
@@ -36,11 +35,8 @@ export default function ClubCard({
       </div>
 
       <div className="p-5 flex flex-col gap-3 text-mainwhite">
-
         <div className="h-18 overflow-hidden">
-          <h1 className="text-xl font-bold tracking-tight">
-            {clubName}
-          </h1>
+          <h1 className="text-xl font-bold tracking-tight">{clubName}</h1>
         </div>
 
         <div className="h-28 overflow-hidden">
@@ -50,7 +46,6 @@ export default function ClubCard({
         </div>
 
         <div className="mt-3 flex flex-col gap-3 md:flex-row md:gap-6 md:justify-center">
-
           {discord && (
             <Link
               href={discord}
@@ -110,7 +105,6 @@ export default function ClubCard({
               Website
             </Link>
           )}
-
         </div>
       </div>
     </div>

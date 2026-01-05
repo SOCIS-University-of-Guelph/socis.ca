@@ -1,54 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  
-	--font-main: "Inter", sans-serif; /* main font for most purposes */
+  --font-main: "Inter", sans-serif; /* main font for most purposes */
 
   /* placeholder colour palette */
   --color-mainblack: #131112;
-  --color-mainwhite: #FFFFFF;
+  --color-mainwhite: #ffffff;
   --color-mainpurple: #6d28d9;
-
 }
 
 @layer utilities {
-
-	.font-main {
-
+  .font-main {
     font-family: var(--font-main);
-
   }
-
 }
 
 body {
-
-	@apply bg-mainwhite;
-	font-family: var(--font-main);
-
+  @apply bg-mainwhite;
+  font-family: var(--font-main);
 }
 
 html {
-
   overflow-y: scroll;
-  scroll-behaviour: 
-  
+  scroll-behaviour:;
 }
 
-html::-webkit-scrollbar { /* chrome safari etc */
+html::-webkit-scrollbar {
+  /* chrome safari etc */
   display: none;
 }
 
 html {
-
   scrollbar-width: none; /* firefox */
-
 }
 
 html {
-
   -ms-overflow-style: none; /* microsoft apps */
-
 }
-

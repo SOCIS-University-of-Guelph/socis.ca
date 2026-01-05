@@ -20,7 +20,7 @@ export default function CommunityBanner() {
         />
 
         <div className="absolute inset-0 bg-black/70" />
-        
+
         <div className="relative z-10 h-full flex items-center">
           <div className="px-12 max-w-xl text-white">
             <h2 className="text-4xl font-extrabold tracking-tight mb-4">
@@ -28,8 +28,9 @@ export default function CommunityBanner() {
             </h2>
 
             <p className="text-lg opacity-90 mb-6">
-              Explore more clubs made possible by SOCIS, meet like-minded students, and find your
-              place within the computing community at the University of Guelph.
+              Explore more clubs made possible by SOCIS, meet like-minded
+              students, and find your place within the computing community at
+              the University of Guelph.
             </p>
 
             <Link
