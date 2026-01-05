@@ -35,14 +35,12 @@ export default function NavigationBar() {
           />
 
           {/* Text */}
-<div className="leading-tight hidden sm:block transition duration-200 group-hover:text-mainwhite/75">
-  <p className="font-bold text-lg md:text-xl">
-    Society Of Computer and
-  </p>
-  <p className="font-bold text-lg md:text-xl">
-    Information Sciences
-  </p>
-</div>
+          <div className="leading-tight hidden sm:block transition duration-200 group-hover:text-mainwhite/75">
+            <p className="font-bold text-lg md:text-xl">
+              Society Of Computer and
+            </p>
+            <p className="font-bold text-lg md:text-xl">Information Sciences</p>
+          </div>
         </Link>
 
         {/* Desktop nav links */}

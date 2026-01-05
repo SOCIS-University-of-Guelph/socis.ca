@@ -19,7 +19,6 @@ type Event = {
   links: EventLink[];
 };
 
-
 const events: Event[] = [
   {
     name: "Intro To The Society Of Computer & Information Sciences (SOCIS)",

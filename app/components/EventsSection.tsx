@@ -20,7 +20,7 @@ const events = [
       },
     ],
   },
-    {
+  {
     name: "Haskayne School Of Business: Digital Innovation Challenge",
     description:
       "The Haskayne School of Business is pleased to host its annual Digital Innovation Challenge Case Competition presented by the Steve and Tina Wilson Family Foundation.",
@@ -62,7 +62,6 @@ const events = [
       },
     ],
   },
-
 ];
 
 export default function EventsPage() {

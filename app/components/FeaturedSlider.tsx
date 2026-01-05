@@ -25,15 +25,6 @@ export default function FeaturedSlider() {
   // should stick to 3 max please!
   const featuredArticles = [
     {
-      titleOfEvent: "Students Pack Peter Clark Hall for SOCIS x GG League Of Legends Finals!",
-      descriptionOfEvent:
-        "200+ students packed the hall to watch the biggest gaming event of the year over free pizza and drinks!",
-      isVideo: false,
-      mediaSource: "/socis_gg_lol.jpg",
-      href: "/events",
-      postingDate: "Nov 27, 2025",
-    },
-    {
       titleOfEvent: "SOCIS Hosts Largest Research Mixer of the Year!",
       descriptionOfEvent:
         "200+ CIS students packed the seminar hall to network with several professors who told them how simple it is to begin student research!",
@@ -41,6 +32,16 @@ export default function FeaturedSlider() {
       mediaSource: "/socisresearchmixer.mp4",
       href: "/events",
       postingDate: "Nov 21, 2025",
+    },
+    {
+      titleOfEvent:
+        "Students Pack Peter Clark Hall for SOCIS x GG League Of Legends Finals!",
+      descriptionOfEvent:
+        "200+ students packed the hall to watch the biggest gaming event of the year over free pizza and drinks!",
+      isVideo: false,
+      mediaSource: "/socis_gg_lol.jpg",
+      href: "/events",
+      postingDate: "Nov 27, 2025",
     },
   ];
 

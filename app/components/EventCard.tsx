@@ -4,11 +4,7 @@ import React from "react";
 import { LuCalendarRange } from "react-icons/lu";
 import { GoClock } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
-import {
-  FaExternalLinkAlt,
-  FaDiscord,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaExternalLinkAlt, FaDiscord, FaInstagram } from "react-icons/fa";
 
 type EventLink = {
   label: string;
@@ -35,13 +31,11 @@ const LINK_STYLES = {
   },
   instagram: {
     icon: FaInstagram,
-    className:
-      "bg-pink-500/15 text-pink-500 hover:bg-pink-500/25",
+    className: "bg-pink-500/15 text-pink-500 hover:bg-pink-500/25",
   },
   website: {
     icon: FaExternalLinkAlt,
-    className:
-      "bg-white/10 text-mainwhite hover:bg-white/20",
+    className: "bg-white/10 text-mainwhite hover:bg-white/20",
   },
 };
 

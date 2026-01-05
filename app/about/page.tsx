@@ -35,9 +35,7 @@ export default function AboutPage() {
 
           {/* Text */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Our Mission
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Mission</h2>
             <p className="text-base sm:text-lg text-mainblack/70 mb-6">
               SOCIS exists to empower students in Computer Science, Software
               Engineering, and related disciplines by fostering collaboration,
@@ -57,14 +55,12 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
           {/* Text */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              What We Do
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Do</h2>
             <p className="text-base sm:text-lg text-mainblack/70 mb-6">
               Throughout the year, SOCIS organizes events that help students
               grow technically, socially, and professionally — whether that’s
-              through hackathons, workshops, industry talks, or community
-              game nights.
+              through hackathons, workshops, industry talks, or community game
+              nights.
             </p>
             <p className="text-base sm:text-lg text-mainblack/70">
               We work closely with umbrella organizations and partner clubs to
@@ -76,7 +72,7 @@ export default function AboutPage() {
           {/* Image */}
           <div className="flex justify-center">
             <Image
-              src="/IMG_5708.jpg"
+              src="/img_5708.jpg"
               alt="SOCIS Community"
               width={360}
               height={360}
@@ -87,9 +83,7 @@ export default function AboutPage() {
 
         {/* Contact / Socials */}
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8">
-            Get Involved
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8">Get Involved</h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Discord */}
