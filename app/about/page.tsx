@@ -25,7 +25,7 @@ export default function AboutPage() {
           {/* Image Container - Standardized Size */}
           <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm">
             <Image
-              src="/img_5716.jpg"
+              src="/img_5716.png"
               alt="SOCIS Meeting"
               fill
               className="object-cover"
@@ -70,7 +70,7 @@ export default function AboutPage() {
           {/* Image Container - Standardized Size */}
           <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm order-1 md:order-2">
             <Image
-              src="/img_5708.jpg"
+              src="/img_5708.png"
               alt="SOCIS Community"
               fill
               className="object-cover"
