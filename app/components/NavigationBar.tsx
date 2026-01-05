@@ -8,6 +8,7 @@ export default function NavigationBar() {
   const [open, setOpen] = useState(false);
 
   const navigationLinks = [
+    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Events", href: "/events" },
     { name: "Clubs", href: "/clubs" },

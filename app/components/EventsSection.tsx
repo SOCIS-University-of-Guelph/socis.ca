@@ -5,53 +5,64 @@ import EventCard from "../components/EventCard";
 
 const events = [
   {
-    name: "SOCIS x Gryphon Gaming: League of Legends Grand Finals",
+    name: "Intro To The Society Of Computer & Information Sciences (SOCIS)",
     description:
-      "Join us and watch both teams compete for the $250 prize pool over free pizza, drinks, and live commentary from our hosts.",
-    date: "November 27, 2025",
-    time: "5:00 PM – 10:00 PM",
+      "Learn what SOCIS is, what we do throughout the year, and how you can get involved. Meet the executive team and connect with fellow computing students.",
+    date: "January 6, 2026",
+    time: "5:00 PM – 7:00 PM",
     location: "PCH 001M",
-    learnMoreLink: "/events",
-    mediaSource: "/League_Grand_Finals_Poster_2.png",
-    discordLinks: [
+    mediaSource: "/article1.png",
+    links: [
       {
         label: "SOCIS Discord",
-        href: "/discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+    ],
+  },
+    {
+    name: "Haskayne School Of Business: Digital Innovation Challenge",
+    description:
+      "The Haskayne School of Business is pleased to host its annual Digital Innovation Challenge Case Competition presented by the Steve and Tina Wilson Family Foundation.",
+    date: "February 7, 2026 (Initial) / March 2026 (Finals)",
+    time: "TBD (All-Weekend Event, Friday-Sunday)",
+    location: "Online (Initial) / University of Calgary (Finals)",
+    mediaSource: "/ucalgary.jpg",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
       },
       {
-        label: "Gryphon Gaming",
-        href: "/gryphon-gaming",
+        label: "Event Website",
+        href: "https://engage.ucalgary.ca/dicc2026",
+        type: "website",
       },
     ],
   },
   {
-    name: "TBD Event #2",
-    description: "Details coming soon.",
-    date: "TBD",
-    time: "TBD",
-    location: "TBD",
-    learnMoreLink: "/events",
-    discordLinks: [
+    name: "GDSC Hacks 2026: Guelph's Biggest Hackathon!",
+    description:
+      "GDSC Hacks is GDG’s annual hackathon where students build, learn, and collaborate on exciting technical projects. All skill levels are welcome.",
+    date: "TBD (~May 2026)",
+    time: "TBD (All-Weekend Event, Friday-Sunday)",
+    location: "University of Guelph Campus",
+    mediaSource: "/gdsc_hacks.png",
+    links: [
       {
         label: "SOCIS Discord",
-        href: "/discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+      {
+        label: "GDG Discord",
+        href: "https://discord.gg/EwE9DAZ5",
+        type: "discord",
       },
     ],
   },
-  {
-    name: "TBD Event #3",
-    description: "Details coming soon.",
-    date: "TBD",
-    time: "TBD",
-    location: "TBD",
-    learnMoreLink: "/events",
-    discordLinks: [
-      {
-        label: "SOCIS Discord",
-        href: "/discord",
-      },
-    ],
-  },
+
 ];
 
 export default function EventsPage() {

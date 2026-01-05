@@ -119,9 +119,7 @@ export default function ClubsPage() {
 
             {/* All Links */}
             <Link
-              href="https://linktr.ee/socis"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               className="
                 flex items-center justify-center gap-3
                 px-6 py-3 sm:px-8 sm:py-4
