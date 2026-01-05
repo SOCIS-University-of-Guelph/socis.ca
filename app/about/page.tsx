@@ -22,14 +22,13 @@ export default function AboutPage() {
 
         {/* Goals Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
-          {/* Image */}
-          <div className="flex justify-center">
+          {/* Image Container - Standardized Size */}
+          <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm">
             <Image
               src="/img_5716.jpg"
-              alt="SOCIS Logo"
-              width={360}
-              height={360}
-              className="rounded-xl border border-white/10"
+              alt="SOCIS Meeting"
+              fill
+              className="object-cover"
             />
           </div>
 
@@ -41,7 +40,6 @@ export default function AboutPage() {
               Engineering, and related disciplines by fostering collaboration,
               leadership, and real-world experience beyond the classroom.
             </p>
-
             <ul className="space-y-3 text-mainblack/80">
               <li>• Create academic and professional growth opportunities</li>
               <li>• Host inclusive social and competitive events</li>
@@ -51,10 +49,10 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* What We Do */}
+        {/* What We Do Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
           {/* Text */}
-          <div>
+          <div className="order-2 md:order-1">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Do</h2>
             <p className="text-base sm:text-lg text-mainblack/70 mb-6">
               Throughout the year, SOCIS organizes events that help students
@@ -69,80 +67,47 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image */}
-          <div className="flex justify-center">
+          {/* Image Container - Standardized Size */}
+          <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm order-1 md:order-2">
             <Image
               src="/img_5708.jpg"
               alt="SOCIS Community"
-              width={360}
-              height={360}
-              className="rounded-xl border border-white/10"
+              fill
+              className="object-cover"
             />
           </div>
         </div>
 
-        {/* Contact / Socials */}
+        {/* Contact / Socials (Restored to Original Styling) */}
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8">Get Involved</h2>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Discord */}
             <Link
               href="https://discord.gg/hWJAeq9R"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                flex items-center justify-center gap-3
-                px-6 py-3 sm:px-8 sm:py-4
-                bg-[#5865F2] hover:bg-[#4752C4]
-                text-white font-semibold
-                rounded-lg
-                transition-all duration-200
-                hover:-translate-y-0.5 hover:shadow-lg
-                text-base sm:text-xl
-              "
+              className="flex items-center justify-center gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-[#5865F2] hover:bg-[#4752C4] text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-base sm:text-xl"
             >
-              <FaDiscord size={22} />
-              Join Our Discord
+              <FaDiscord size={22} /> Join Our Discord
             </Link>
 
             {/* Instagram */}
             <Link
-              href="https://instagram.com/YOUR_INSTAGRAM"
+              href="https://www.instagram.com/socis.uog/"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                flex items-center justify-center gap-3
-                px-6 py-3 sm:px-8 sm:py-4
-                bg-gradient-to-r
-                from-[#F58529] via-[#DD2A7B] to-[#8134AF]
-                hover:from-[#F77737] hover:via-[#E1306C] hover:to-[#833AB4]
-                text-white font-semibold
-                rounded-lg
-                transition-all duration-200
-                hover:-translate-y-0.5 hover:shadow-lg
-                text-base sm:text-xl
-              "
+              className="flex items-center justify-center gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:from-[#F77737] hover:via-[#E1306C] hover:to-[#833AB4] text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-base sm:text-xl"
             >
-              <FaInstagram size={22} />
-              Follow on Instagram
+              <FaInstagram size={22} /> Follow on Instagram
             </Link>
 
             {/* All Links */}
             <Link
               href="/contact"
-              className="
-                flex items-center justify-center gap-3
-                px-6 py-3 sm:px-8 sm:py-4
-                bg-mainblack text-mainwhite font-semibold
-                rounded-lg
-                transition-all duration-200
-                hover:-translate-y-0.5 hover:shadow-lg
-                text-base sm:text-xl
-              "
+              className="flex items-center justify-center gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-mainblack text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg text-base sm:text-xl"
             >
-              <FaExternalLinkAlt size={22} />
-              View All Of Our Links
+              <FaExternalLinkAlt size={22} /> View All Of Our Links
             </Link>
           </div>
         </div>
