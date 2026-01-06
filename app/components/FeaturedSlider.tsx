@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 // @todo: add autoplay
 // @todo: the switching between slides is kind of glitchy fix it
+// @todo: add video for second slider
 export default function FeaturedSlider() {
   const [isPaused, setIsPaused] = useState(false); // for featured slider
   const [currentSlide, setCurrentSlide] = useState(0); // for slider dots
