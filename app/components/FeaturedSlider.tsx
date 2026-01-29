@@ -40,7 +40,7 @@ export default function FeaturedSlider() {
       descriptionOfEvent:
         "200+ students packed the hall to watch the biggest gaming event of the year over free pizza and drinks!",
       isVideo: false,
-      mediaSource: "/socis_gg_lol.jpg",
+      mediaSource: "/socis_gg_lol.png",
       href: "/events",
       postingDate: "Nov 27, 2025",
     },
