@@ -21,39 +21,19 @@ type Event = {
 
 const events: Event[] = [
   {
-    name: "Intro To The Society Of Computer & Information Sciences (SOCIS)",
+    name: "URA/USRA Mixer: Network With CIS Professors & Co-Op Students!",
     description:
-      "Learn what SOCIS is, what we do throughout the year, and how you can get involved. Meet the executive team and connect with fellow computing students.",
-    date: "January 6, 2026",
-    time: "5:00 PM – 7:00 PM",
-    location: "PCH 001M",
-    mediaSource: "/article1.png",
+      "Come join us as several CIS professors outline upcoming positions opening in their labs and to learn about the co-op experience from " + 
+      "several UofG students in the co-op stream of BComp!",
+    date: "January 29, 2026",
+    time: "1:00 PM – 3:00 PM",
+    location: "Reynolds Building 1101",
+    mediaSource: "/urausrmixer.png",
     links: [
       {
         label: "SOCIS Discord",
         href: "https://discord.gg/hWJAeq9R",
         type: "discord",
-      },
-    ],
-  },
-  {
-    name: "Haskayne School Of Business: Digital Innovation Challenge",
-    description:
-      "The Haskayne School of Business is pleased to host its annual Digital Innovation Challenge Case Competition presented by the Steve and Tina Wilson Family Foundation.",
-    date: "February 7, 2026 (Initial) / March 2026 (Finals)",
-    time: "TBD (All-Weekend Event, Friday–Sunday)",
-    location: "Online (Initial) / University of Calgary (Finals)",
-    mediaSource: "/ucalgary.jpg",
-    links: [
-      {
-        label: "SOCIS Discord",
-        href: "https://discord.gg/hWJAeq9R",
-        type: "discord",
-      },
-      {
-        label: "Event Website",
-        href: "https://engage.ucalgary.ca/dicc2026",
-        type: "website",
       },
     ],
   },

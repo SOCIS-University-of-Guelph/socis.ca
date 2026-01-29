@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type FeaturedEventProps = {
   titleOfEvent: string;
@@ -25,15 +26,28 @@ export default function FeaturedEvent({
           src={mediaSource}
           autoPlay
           loop
+          preload="auto"
           muted
           playsInline
-          className="absolute w-full object-cover h-full"
+          className="absolute w-full h-full object-cover"
         />
       ) : (
-        <img src={mediaSource} />
+        mediaSource && (
+          <Image
+            src={mediaSource}
+            alt={titleOfEvent}
+            fill
+            priority
+            className="absolute w-full h-full object-cover"
+          />
+        )
       )}
-      <div className="absolute inset-0 bg-black/60"></div>{" "}
-      {/* black overlay for videos do not remove */}
+
+      {/* black overlay ONLY for videos */}
+      {isVideo && (
+        <div className="absolute inset-0 bg-black/60" />
+      )}
+
       <div className="absolute bottom-0 left-0 max-w-xl p-12 text-mainwhite">
         <p className="text-sm font-medium tracking-tighter uppercase opacity-80">
           {postingDate}
@@ -44,13 +58,13 @@ export default function FeaturedEvent({
         <p className="text-lg md:text-xl opacity-90 leading-relaxed">
           {descriptionOfEvent}
         </p>
-        {href ? (
+        {href && (
           <Link href={href}>
             <button className="mt-3 px-6 py-2 rounded-lg bg-white/20 text-mainwhite font-semibold hover:bg-white/30 transition duration-200">
               Learn More →
             </button>
           </Link>
-        ) : null}
+        )}
       </div>
     </>
   );

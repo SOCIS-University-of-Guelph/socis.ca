@@ -28,6 +28,7 @@ export default function AboutPage() {
               src="/img_5716.png"
               alt="SOCIS Meeting"
               fill
+              priority
               className="object-cover"
             />
           </div>
@@ -68,11 +69,12 @@ export default function AboutPage() {
           </div>
 
           {/* Image Container - Standardized Size */}
-          <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm order-1 md:order-2">
+          <div className="rotate-90 relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm order-1 md:order-2">
             <Image
               src="/img_5708.png"
               alt="SOCIS Community"
               fill
+              priority
               className="object-cover"
             />
           </div>
