@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaDiscord, FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { RiFilePaper2Fill } from "react-icons/ri";
 import Image from "next/image";
 
 const socials = [
@@ -55,9 +56,14 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col">
-            <h2 className="font-bold text-lg mb-3">Socials</h2>
+            <h2 className="font-bold text-lg mb-3">Important Links</h2>
 
             <div className="flex flex-col gap-3 text-sm opacity-80 transition-all">
+              <Link href="/constitution-and-by-laws" className={`flex items-center gap-2 transition-all rounded-md px-4 py-2 bg-white/10 justify-center md:bg-transparent md:justify-start md:px-0 md:py-1 hover:text-[#999999]`}>
+                <RiFilePaper2Fill className="text-lg" />
+                Constitution & Bylaws
+              </Link>
+
               {socials.map((item) => {
                 const Icon = item.icon;
 

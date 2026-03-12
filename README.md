@@ -1,5 +1,9 @@
 # Society of Computer & Information Sciences (SOCIS) — University of Guelph
 
+<!-- 
+FIX THE SOCIS IMAGE
+-->
+
 <p align="center">
   <img src="public/socis_logo.png" alt="SOCIS Logo" width="180" />
 </p>
