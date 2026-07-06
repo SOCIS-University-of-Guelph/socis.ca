@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { LuCalendarRange } from "react-icons/lu";
 import { GoClock } from "react-icons/go";
@@ -22,6 +25,7 @@ type EventCardProps = {
   mediaSource?: string;
   variant?: "default" | "events";
   links?: EventLink[];
+  slug?: string;
 };
 
 const LINK_STYLES = {
@@ -49,11 +53,35 @@ export default function EventCard({
   mediaSource,
   variant = "default",
   links = [],
+  slug,
 }: EventCardProps) {
+  const router = useRouter();
   const displayLinks = links.slice(0, 3); // HARD CAP at 3
+  const destination = slug ? `/events/${slug}` : learnMoreLink;
+
+  const handleCardClick = () => {
+    router.push(destination);
+  };
+
+  const handleLinkClick = (
+    event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
+  ) => {
+    event.stopPropagation();
+  };
 
   return (
-    <div className="group w-full max-w-sm bg-mainblack border border-white/10 rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl">
+    <div
+      role="button"
+      tabIndex={0}
+      onClick={handleCardClick}
+      onKeyDown={(event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          handleCardClick();
+        }
+      }}
+      className="group w-full max-w-sm cursor-pointer bg-mainblack border border-white/10 rounded-xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
+    >
       {/* Poster */}
       <div className="relative h-52 w-full">
         <Image
@@ -110,6 +138,7 @@ export default function EventCard({
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleLinkClick}
                     className={`
                       flex items-center justify-center gap-2
                       w-full px-4 py-2 rounded-lg
@@ -124,8 +153,12 @@ export default function EventCard({
               })}
             </div>
           ) : (
-            <Link
-              href={learnMoreLink}
+            <button
+              type="button"
+              onClick={(event) => {
+                handleLinkClick(event);
+                handleCardClick();
+              }}
               className="
                 flex items-center justify-center gap-2
                 w-full rounded-lg px-4 py-3
@@ -136,7 +169,7 @@ export default function EventCard({
             >
               Learn more
               <FaExternalLinkAlt size={16} />
-            </Link>
+            </button>
           )}
         </div>
       </div>
