@@ -2,7 +2,61 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDiscord, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
+const teamMembers = [
+  { name: "Muhammad-Tameem Mughal", role: "President" },
+  { name: "Sheil Patel", role: "VP Internal Affairs" },
+  { name: "Shamir Bahome", role: "VP External Affairs", photoSrc: "/headshots/Shamir.jpg" },
+  { name: "Gregory McKay", role: "VP Financial Affairs" },
+  { name: "Abbas Al-Sharoot", role: "VP Communications", photoSrc: "/headshots/Abbas.jpg" },
+  { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/Royce.png" },
+  { name: "Tiya Persaud", role: "Marketing Team" },
+  { name: "Mitchell Bravo", role: "Marketing Team", photoSrc: "/headshots/Mitchell.png" },
+  { name: "Benjamin Probert", role: "Marketing Team" },
+  { name: "Stephanie Corbu", role: "Technology Team" },
+  { name: "Shelly Normatov", role: "Finance Team" },
+];
+function TeamCard({
+  name,
+  role,
+  photoSrc,
+}: {
+  name: string;
+  role: string;
+  photoSrc?: string;
+}) {
+  const initials = name
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
 
+  return (
+    <div className="rounded-3xl border border-black/10 bg-white shadow-sm p-4 sm:p-6">
+      <div className="relative mx-auto flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-slate-200 shadow-sm sm:h-32 sm:w-32">
+        {photoSrc ? (
+          <Image
+            src={photoSrc}
+            alt={name}
+            fill
+            sizes="(min-width: 640px) 128px, 112px"
+            className="object-cover"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-3xl font-semibold text-mainblack/70 sm:text-4xl">
+            {initials}
+          </div>
+        )}
+      </div>
+      <div className="mt-4 text-center">
+        <p className="text-lg font-semibold text-mainblack">{name}</p>
+        <p className="mt-1 text-sm text-mainblack/70">{role}</p>
+      </div>
+    </div>
+  );
+}
 export default function AboutPage() {
   return (
     <section className="w-full text-mainblack">
@@ -20,9 +74,36 @@ export default function AboutPage() {
           </p>
         </div>
 
+        <div className="mb-24">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-2">Our Team</h2>
+            <p className="text-base sm:text-lg text-mainblack/70 max-w-3xl mx-auto">
+              The SOCIS leadership and staff team working together to support
+              computing students at the University of Guelph.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            {teamMembers.slice(0, teamMembers.length - 2).map((member) => (
+              <div key={member.name}>
+                <TeamCard name={member.name} role={member.role} photoSrc={member.photoSrc} />
+              </div>
+            ))}
+
+            <div className="sm:col-span-2 xl:col-span-3 flex justify-center">
+              <div className="grid w-full max-w-3xl gap-6 sm:grid-cols-2">
+                {teamMembers.slice(-2).map((member) => (
+                  <div key={member.name} className="w-full">
+                    <TeamCard name={member.name} role={member.role} photoSrc={member.photoSrc} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Goals Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
-          {/* Image Container - Standardized Size */}
           <div className="relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm">
             <Image
               src="/img_5716.png"
@@ -33,7 +114,6 @@ export default function AboutPage() {
             />
           </div>
 
-          {/* Text */}
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Mission</h2>
             <p className="text-base sm:text-lg text-mainblack/70 mb-6">
@@ -52,7 +132,6 @@ export default function AboutPage() {
 
         {/* What We Do Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
-          {/* Text */}
           <div className="order-2 md:order-1">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">What We Do</h2>
             <p className="text-base sm:text-lg text-mainblack/70 mb-6">
@@ -68,7 +147,6 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image Container - Standardized Size */}
           <div className="rotate-90 relative aspect-square w-full max-w-[420px] mx-auto overflow-hidden rounded-xl border border-white/10 shadow-sm order-1 md:order-2">
             <Image
               src="/img_5708.png"

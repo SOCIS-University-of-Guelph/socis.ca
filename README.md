@@ -14,6 +14,41 @@ SOCIS is the academic society representing students in the Bachelor of Computing
 
 ---
 
+## Run locally for testing
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Open the app in your browser:
+
+```text
+http://localhost:3000
+```
+
+4. Build for production and run the production server:
+
+```bash
+npm run build
+npm run start
+```
+
+5. Run lint checks:
+
+```bash
+npm run lint
+```
+
+---
+
 ## Clubs Supported by SOCIS
 
 SOCIS directly funds and supports several computing-focused clubs at UofG, including:
