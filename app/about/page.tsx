@@ -8,8 +8,13 @@ const teamMembers = [
   { name: "Shamir Bahome", role: "VP External Affairs", photoSrc: "/headshots/Shamir.jpg" },
   { name: "Gregory McKay", role: "VP Financial Affairs" },
   { name: "Abbas Al-Sharoot", role: "VP Communications", photoSrc: "/headshots/Abbas.jpg" },
+<<<<<<< HEAD
   { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/royce.png" },
   { name: "Tiya Persaud", role: "Marketing Team" },
+=======
+  { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/Royce.png" },
+  { name: "Tiya Persaud", role: "Marketing Team", photoSrc: "/headshots/tiya.jpg" },
+>>>>>>> master
   { name: "Mitchell Bravo", role: "Marketing Team", photoSrc: "/headshots/Mitchell.png" },
   { name: "Benjamin Probert", role: "Marketing Team" },
   { name: "Stephanie Corbu", role: "Technology Team" },
