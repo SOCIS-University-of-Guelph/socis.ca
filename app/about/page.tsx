@@ -7,7 +7,7 @@ const teamMembers = [
   { name: "Sheil Patel", role: "VP Internal Affairs", photoSrc: "/headshots/Sheil.png" },
   { name: "Shamir Bahome", role: "VP External Affairs", photoSrc: "/headshots/Shamir.jpg" },
   { name: "Gregory McKay", role: "VP Financial Affairs" , photoSrc: "/headshots/greg.jpg"},
-  { name: "Abbas Al-Sharoot", role: "VP Communications", photoSrc: "/headshots/Abbas-joke.jpg" },
+  { name: "Abbas Al-Sharoot", role: "VP Communications", photoSrc: "/headshots/Abbas.jpg" },
   { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/royce.png" },
   { name: "Tiya Persaud", role: "Marketing Team", photoSrc: "/headshots/tiya.jpg" },
   { name: "Mitchell Bravo", role: "Marketing Team", photoSrc: "/headshots/Mitchell.png" },
@@ -66,24 +66,15 @@ export default function AboutPage() {
           <h1 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
             About SOCIS
           </h1>
-          <p className="text-base sm:text-lg text-mainblack/70 max-w-3xl mx-auto">
-            The Society of Computing and Information Science (SOCIS) represents
-            computing students at the University of Guelph. We build community,
-            create opportunities, and support students academically,
-            professionally, and socially.
-          </p>
+          
         </div>
 
         <div className="mb-24">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-2">Our Team</h2>
-            <p className="text-base sm:text-lg text-mainblack/70 max-w-3xl mx-auto">
-              The SOCIS leadership and staff team working together to support
-              computing students at the University of Guelph.
-            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-2">Meet the Team</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid  sm:grid-cols-2 xl:grid-cols-3  gap-6">
             {teamMembers.slice(0, teamMembers.length - 2).map((member) => (
               <div key={member.name}>
                 <TeamCard name={member.name} role={member.role} photoSrc={member.photoSrc} />
