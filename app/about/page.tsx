@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaDiscord, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
 const teamMembers = [
-  { name: "Muhammad-Tameem Mughal", role: "President" },
-  { name: "Sheil Patel", role: "VP Internal Affairs" },
+  { name: "Muhammad-Tameem Mughal", role: "President", photoSrc: "/headshots/Tameem.jpg" },
+  { name: "Sheil Patel", role: "VP Internal Affairs", photoSrc: "/headshots/Shiel.png" },
   { name: "Shamir Bahome", role: "VP External Affairs", photoSrc: "/headshots/Shamir.jpg" },
-  { name: "Gregory McKay", role: "VP Financial Affairs" },
+  { name: "Gregory McKay", role: "VP Financial Affairs" , photoSrc: "/headshots/greg.jpg"},
   { name: "Abbas Al-Sharoot", role: "VP Communications", photoSrc: "/headshots/Abbas.jpg" },
-  { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/Royce.png" },
+  { name: "Royce Demanou Tajo", role: "VP Technology", photoSrc: "/headshots/royce.png" },
   { name: "Tiya Persaud", role: "Marketing Team", photoSrc: "/headshots/tiya.jpg" },
   { name: "Mitchell Bravo", role: "Marketing Team", photoSrc: "/headshots/Mitchell.png" },
-  { name: "Benjamin Probert", role: "Marketing Team" },
-  { name: "Stephanie Corbu", role: "Technology Team" },
+  { name: "Benjamin Probert", role: "Marketing Team", photoSrc: "/headshots/Ben.jpg" },
+  { name: "Stephanie Corbu", role: "Technology Team", photoSrc: "/headshots/Stephanie.jpg" },
   { name: "Shelly Normatov", role: "Finance Team" },
 ];
 function TeamCard({
