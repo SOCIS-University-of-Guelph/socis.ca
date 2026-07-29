@@ -13,7 +13,7 @@ const teamMembers = [
   { name: "Mitchell Bravo", role: "Marketing Team", photoSrc: "/headshots/Mitchell.png" },
   { name: "Benjamin Probert", role: "Marketing Team", photoSrc: "/headshots/Ben.jpg" },
   { name: "Stephanie Corbu", role: "Technology Team", photoSrc: "/headshots/Stephanie.jpg" },
-  { name: "Shelly Normatov", role: "Finance Team" },
+  { name: "Shelly Normatov", role: "Finance Team", photoSrc: "/headshots/shelly.png" },
 ];
 function TeamCard({
   name,
