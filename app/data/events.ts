@@ -15,7 +15,30 @@ export type Event = {
   slug: string;
 };
 
-export const upcomingEvents: Event[] = [];
+export const upcomingEvents: Event[] = [ 
+  {
+    name: "SOCIS/Gryphon Gaming 2026: League Tournament!",
+    description:
+      "Join Gryphon Gaming and SOCIS for a League of Legends tournament! Open to all skill levels, players will compete in online qualifiers with balanced teams leading up to the in-person finals on November 26th. Compete for a $250 prize pot while enjoying free pizza, drinks, raffles, live commentary, and more at the finals!",
+    date: "November 26, 2026",
+    time: "Doors open at 5:00 PM",
+    location: "University Centre, Peter Clark Hall",
+    mediaSource: "/league.png",
+    slug: "league-tournament-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+      {
+        label: "GG Discord",
+        href: "https://discord.gg/gryphon-gaming-474945469039247382",
+        type: "discord",
+      },
+    ],
+  }
+];
 
 export const pastEvents: Event[] = [
   {
@@ -53,6 +76,28 @@ export const pastEvents: Event[] = [
       {
         label: "GDG Discord",
         href: "https://discord.gg/EwE9DAZ5",
+        type: "discord",
+      },
+    ],
+  },
+  {
+    name: "SOCIS/Gryphon Gaming 2026: Valorant Tournament!",
+    description:
+      "Join Gryphon Gaming and SOCIS for an in-person VALORANT finals watch party! Cheer on two teams competing for the championship while enjoying free pizza, drinks, games, and a chance to win prizes.",
+    date: "October 21, 2026",
+    time: "5:00 PM – 11:00 PM",
+    location: "University Centre, Peter Clark Hall",
+    mediaSource: "/valorant.png",
+    slug: "valorant-tournament-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+      {
+        label: "GG Discord",
+        href: "https://discord.gg/gryphon-gaming-474945469039247382",
         type: "discord",
       },
     ],
