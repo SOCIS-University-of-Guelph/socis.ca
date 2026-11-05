@@ -9,11 +9,11 @@ export default function EventsPage() {
     <section className="w-full text-mainblack">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
             Events
           </h2>
-          <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl">
+          <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mx-auto">
             SOCIS hosts academic, social, and professional events throughout the
             year. Join us to learn, connect, and engage with the computing
             community at the University of Guelph.
@@ -21,7 +21,7 @@ export default function EventsPage() {
         </div>
 
         {/* Social / Links buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 mb-12">
           <Link
             href="https://discord.gg/hWJAeq9R"
             target="_blank"
@@ -49,35 +49,41 @@ export default function EventsPage() {
         </div>
 
         {/* Upcoming Events */}
-        <div className="mb-16">
-          <div className="mb-6">
-            <h3 className="text-3xl sm:text-4xl font-bold mb-2">Upcoming Events</h3>
-            <p className="text-mainblack/70 max-w-3xl">
+        <div className="mb-12">
+          <div className="mb-6 text-center">
+            <h3 className="text-3xl sm:text-4xl font-bold mb-2">
+              Upcoming Events
+            </h3>
+            <p className="text-mainblack/70 max-w-3xl mx-auto">
               We are finalizing our next events schedule. In the meantime, check
               out our past events and join our channels for the latest updates.
             </p>
           </div>
 
           {upcomingEvents.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+            <div className="flex flex-wrap justify-center gap-8">
               {upcomingEvents.map((event) => (
-                <EventCard
+                <div
                   key={event.name}
-                  name={event.name}
-                  description={event.description}
-                  date={event.date}
-                  time={event.time}
-                  location={event.location}
-                  learnMoreLink="/events"
-                  mediaSource={event.mediaSource}
-                  variant="events"
-                  links={event.links ?? []}
-                  slug={event.slug}
-                />
+                  className="flex justify-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
+                >
+                  <EventCard
+                    name={event.name}
+                    description={event.description}
+                    date={event.date}
+                    time={event.time}
+                    location={event.location}
+                    learnMoreLink="/events"
+                    mediaSource={event.mediaSource}
+                    variant="events"
+                    links={event.links ?? []}
+                    slug={event.slug}
+                  />
+                </div>
               ))}
             </div>
           ) : (
-            <div className="rounded-3xl border border-black/10 bg-white p-10 text-mainblack/70 shadow-sm">
+            <div className="max-w-3xl mx-auto text-center rounded-3xl border border-black/10 bg-white p-10 text-mainblack/70 shadow-sm">
               <p className="text-lg font-semibold text-mainblack mb-3">
                 No confirmed events yet.
               </p>
@@ -90,31 +96,37 @@ export default function EventsPage() {
           )}
         </div>
 
+        <hr className="border-t border-black/10 mb-12" />
+
         {/* Past Events */}
         <div>
-          <div className="mb-6">
+          <div className="mb-6 text-center">
             <h3 className="text-3xl sm:text-4xl font-bold mb-2">Past Events</h3>
-            <p className="text-mainblack/70 max-w-3xl">
-              A selection of recent SOCIS events to keep the archive visible while
-              upcoming plans are finalized.
+            <p className="text-mainblack/70 max-w-3xl mx-auto">
+              A selection of recent SOCIS events to keep the archive visible
+              while upcoming plans are finalized.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {pastEvents.map((event) => (
-              <EventCard
+              <div
                 key={event.name}
-                name={event.name}
-                description={event.description}
-                date={event.date}
-                time={event.time}
-                location={event.location}
-                learnMoreLink="/events"
-                mediaSource={event.mediaSource}
-                variant="events"
-                links={event.links ?? []}
-                slug={event.slug}
-              />
+                className="flex justify-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
+              >
+                <EventCard
+                  name={event.name}
+                  description={event.description}
+                  date={event.date}
+                  time={event.time}
+                  location={event.location}
+                  learnMoreLink="/events"
+                  mediaSource={event.mediaSource}
+                  variant="events"
+                  links={event.links ?? []}
+                  slug={event.slug}
+                />
+              </div>
             ))}
           </div>
         </div>

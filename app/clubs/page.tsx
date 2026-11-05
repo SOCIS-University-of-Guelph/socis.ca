@@ -66,13 +66,13 @@ export default function ClubsPage() {
     <section className="w-full text-mainblack">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
             Clubs Under SOCIS
           </h2>
 
           {/* Social / Links buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4">
             {/* Discord */}
             <Link
               href="https://discord.gg/hWJAeq9R"
@@ -138,7 +138,7 @@ export default function ClubsPage() {
         </div>
 
         {/* Description */}
-        <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mb-12">
+        <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mx-auto text-center mb-12">
           SOCIS is the academic society representing the Bachelor of Computing
           at the University of Guelph. Beyond our own initiatives, we directly
           support and fund the university’s leading computing clubs—creating a
@@ -146,17 +146,21 @@ export default function ClubsPage() {
         </p>
 
         {/* Clubs Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+        <div className="flex flex-wrap justify-center gap-8">
           {clubs.map((club) => (
-            <ClubCard
+            <div
               key={club.clubName}
-              clubName={club.clubName}
-              description={club.description}
-              discord={club.discord}
-              instagram={club.instagram}
-              website={club.website}
-              mediaSource={club.mediaSource}
-            />
+              className="flex justify-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.334rem)]"
+            >
+              <ClubCard
+                clubName={club.clubName}
+                description={club.description}
+                discord={club.discord}
+                instagram={club.instagram}
+                website={club.website}
+                mediaSource={club.mediaSource}
+              />
+            </div>
           ))}
         </div>
       </div>

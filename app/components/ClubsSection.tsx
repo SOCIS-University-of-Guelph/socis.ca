@@ -18,8 +18,8 @@ export default function CommunityBanner() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/70" />
 
-        <div className="relative z-10 h-full flex items-center">
-          <div className="px-12 max-w-xl text-white">
+        <div className="relative z-10 h-full flex items-center justify-center">
+          <div className="px-6 sm:px-12 max-w-xl text-white text-center">
             <h2 className="text-4xl font-extrabold tracking-tight mb-4">
               A community you’ll love
             </h2>

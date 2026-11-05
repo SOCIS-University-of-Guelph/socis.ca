@@ -17,6 +17,23 @@ export type Event = {
 
 export const upcomingEvents: Event[] = [ 
   {
+    name: "Experience Ventures Hackathon 2026: Appllications Open!",
+    description:
+      "Join SOCIS for a 16-hour hackathon focused on real-world challenges surrounding health and well-being! Collaborate in cross-institutional teams with students from other universities, earn a $350 honorarium, and compete for a chance to attend the National Hackathon in Calgary. The event takes place November 28–29 in Kitchener, and applications are open until November 20!",
+    date: "January 29, 2026",
+    time: "TBD; 16 hour hackathon",
+    location: "Catalyst, Kitchenver, Ontario",
+    mediaSource: "/EVH.jpg",
+    slug: "experience-ventures-hackathon-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+    ],
+  },
+  {
     name: "SOCIS/Gryphon Gaming 2026: League Tournament!",
     description:
       "Join Gryphon Gaming and SOCIS for a League of Legends tournament! Open to all skill levels, players will compete in online qualifiers with balanced teams leading up to the in-person finals on November 26th. Compete for a $250 prize pot while enjoying free pizza, drinks, raffles, live commentary, and more at the finals!",
@@ -42,14 +59,53 @@ export const upcomingEvents: Event[] = [
 
 export const pastEvents: Event[] = [
   {
-    name: "URA/USRA Mixer: Network With CIS Professors & Co-Op Students!",
+    name: "Coding Competition 2026!",
     description:
-      "Come join us as several CIS professors outline upcoming positions opening in their labs and to learn about the co-op experience from several UofG students in the co-op stream of BComp!",
-    date: "January 29, 2026",
-    time: "1:00 PM – 3:00 PM",
+      "Join SOCIS for an evening of competitive programming! Work individually or in teams of up to 3 to solve LeetCode and ICPC-style problems, fwith a chance to be part of a $450 prize pool. Pizza will be provided, and all skill levels are welcomed!",
+    date: "October 16, 2026",
+    time: "6:00 PM – 9:00 PM",
     location: "Reynolds Building 1101",
-    mediaSource: "/urausrmixer.png",
-    slug: "ura-usra-mixer",
+    mediaSource: "/codingcomp.jpg",
+    slug: "coding-comp",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+    ],
+  },
+  {
+    name: "SOCIS/Gryphon Gaming 2026: Valorant Tournament!",
+    description:
+      "Join Gryphon Gaming and SOCIS for an in-person VALORANT finals watch party! Cheer on two teams competing for the championship while enjoying free pizza, drinks, games, and a chance to win prizes.",
+    date: "October 21, 2026",
+    time: "5:00 PM – 11:00 PM",
+    location: "University Centre, Peter Clark Hall",
+    mediaSource: "/valorant.png",
+    slug: "valorant-tournament-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/hWJAeq9R",
+        type: "discord",
+      },
+      {
+        label: "GG Discord",
+        href: "https://discord.gg/gryphon-gaming-474945469039247382",
+        type: "discord",
+      },
+    ],
+  },
+  {
+    name: "AI/ML Workshop: Teaching A Machine To Read the Room!",
+    description:
+      "Join SOCIS for an AI/ML workshop exploring exciting concepts in Articifial Intelligence and Machine Learning. Learn, explore, and discover more about the world of AI!",
+    date: "October 2, 2026",
+    time: "1:00 PM – 4:00 PM",
+    location: "Reynolds Building 1101",
+    mediaSource: "/AiML.jpg",
+    slug: "ai-ml-workshop",
     links: [
       {
         label: "SOCIS Discord",
@@ -81,25 +137,20 @@ export const pastEvents: Event[] = [
     ],
   },
   {
-    name: "SOCIS/Gryphon Gaming 2026: Valorant Tournament!",
+    name: "URA/USRA Mixer: Network With CIS Professors & Co-Op Students!",
     description:
-      "Join Gryphon Gaming and SOCIS for an in-person VALORANT finals watch party! Cheer on two teams competing for the championship while enjoying free pizza, drinks, games, and a chance to win prizes.",
-    date: "October 21, 2026",
-    time: "5:00 PM – 11:00 PM",
-    location: "University Centre, Peter Clark Hall",
-    mediaSource: "/valorant.png",
-    slug: "valorant-tournament-2026",
+      "Come join us as several CIS professors outline upcoming positions opening in their labs and to learn about the co-op experience from several UofG students in the co-op stream of BComp!",
+    date: "January 29, 2026",
+    time: "1:00 PM – 3:00 PM",
+    location: "Reynolds Building 1101",
+    mediaSource: "/urausrmixer.png",
+    slug: "ura-usra-mixer",
     links: [
       {
         label: "SOCIS Discord",
         href: "https://discord.gg/hWJAeq9R",
         type: "discord",
       },
-      {
-        label: "GG Discord",
-        href: "https://discord.gg/gryphon-gaming-474945469039247382",
-        type: "discord",
-      },
     ],
-  },
+  }
 ];
