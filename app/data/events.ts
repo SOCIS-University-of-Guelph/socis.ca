@@ -16,13 +16,35 @@ export type Event = {
 };
 
 export const upcomingEvents: Event[] = [ 
+{
+    name: "SOCIS/Rocketry Club 2026: NASA Space Apps Challenge!",
+    description:
+      "Join SOCIS and the Rocketry Club for the 2026 NASA Space Apps Challenge! Spend 48 hours using NASA's open data to tackle real-world challenges on Earth and in space. Beginners and experienced hackers are welcome, and you can join solo or with a team of up to 6. Spots are limited to 40 participants, and there's NASA merch to grab!",
+    date: "November 14 – 15, 2026",
+    time: "9:00 AM – 5:00 PM",
+    location: "THRN 1200, University of Guelph",
+    mediaSource: "/socis_rocketry.png",
+    slug: "nasa-space-apps-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/gzYWRmsWYw",
+        type: "discord",
+      },
+      {
+        label: "Rocketry Club Discord",
+        href: "https://discord.gg/INVITE_CODE",
+        type: "discord",
+      },
+    ],
+  },
   {
     name: "Experience Ventures Hackathon 2026: Appllications Open!",
     description:
       "Join SOCIS for a 16-hour hackathon focused on real-world challenges surrounding health and well-being! Collaborate in cross-institutional teams with students from other universities, earn a $350 honorarium, and compete for a chance to attend the National Hackathon in Calgary. The event takes place November 28–29 in Kitchener, and applications are open until November 20!",
     date: "January 29, 2026",
     time: "TBD; 16 hour hackathon",
-    location: "Catalyst, Kitchenver, Ontario",
+    location: "Catalyst, Kitchener, Ontario",
     mediaSource: "/EVH.jpg",
     slug: "experience-ventures-hackathon-2026",
     links: [
@@ -36,7 +58,7 @@ export const upcomingEvents: Event[] = [
   {
     name: "SOCIS/Gryphon Gaming 2026: League Tournament!",
     description:
-      "Join Gryphon Gaming and SOCIS for a League of Legends tournament! Open to all skill levels, players will compete in online qualifiers with balanced teams leading up to the in-person finals on November 26th. Compete for a $250 prize pot while enjoying free pizza, drinks, raffles, live commentary, and more at the finals!",
+      "Join Gryphon Gaming and SOCIS for the League of Legends tournament finals! Registration is now closed, but everyone is welcome to come watch the in-person finals on November 26th. Cheer on the teams while enjoying free pizza, drinks, raffles, live commentary, and more!",
     date: "November 26, 2026",
     time: "Doors open at 5:00 PM",
     location: "University Centre, Peter Clark Hall",

@@ -13,13 +13,13 @@ export default function ContactPage() {
     <section className="w-full text-mainblack">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
-        <div className="mb-8">
-          <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
+        <div className="mb-8 text-center">
+          <h2 className="text-3xl sm:text-6xl font-extrabold tracking-tight mb-6">
             Contact SOCIS
           </h2>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mb-8">
+          <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mx-auto mb-8">
             The Society of Computer & Information Sciences (SOCIS) represents
             computing students at the University of Guelph. Whether you’re
             looking to get involved, collaborate with our clubs, sponsor an
@@ -28,7 +28,7 @@ export default function ContactPage() {
           </p>
 
           {/* CTA buttons — full container width */}
-          <div className="flex flex-col gap-4 max-w-4xl">
+          <div className="flex flex-col gap-4 max-w-4xl mx-auto">
             {/* Linktree */}
             <Link
               href="https://linktr.ee/socis"
