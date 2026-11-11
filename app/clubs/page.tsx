@@ -51,13 +51,13 @@ const clubs = [
     mediaSource: "/gccc_logo.png",
   },
   {
-    clubName: "Guelph Coding Community",
+    clubName: "Guelph Game Development Club",
     description:
-      "A SOCIS-backed computing club dedicated to student engagement and technical development.",
-    discord: "",
-    instagram: "https://instagram.com/example6",
+      "The University of Guelph's game dev club for anyone who loves making games. Meet other developers, artists, and designers, and work on projects together.",
+    discord: "https://discord.gg/uofg",
+    instagram: "https://www.instagram.com/gamedev_guelph/",
     website: "",
-    mediaSource: "/socis_logo.png",
+    mediaSource: "/gamedev_logo.png",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function ClubsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-6xl font-extrabold tracking-tight mb-6">
             Clubs Under SOCIS
           </h2>
 

@@ -10,7 +10,7 @@ export default function EventsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h2 className="text-4xl sm:text-7xl font-extrabold tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-6xl font-extrabold tracking-tight mb-6">
             Events
           </h2>
           <p className="text-base sm:text-lg text-mainblack/70 max-w-4xl mx-auto">
