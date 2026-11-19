@@ -16,15 +16,15 @@ export type Event = {
 };
 
 export const upcomingEvents: Event[] = [ 
-{
-    name: "SOCIS/Rocketry Club 2026: NASA Space Apps Challenge!",
+  {
+    name: "Research Mixer 2026!",
     description:
-      "Join SOCIS and the Rocketry Club for the 2026 NASA Space Apps Challenge! Spend 48 hours using NASA's open data to tackle real-world challenges on Earth and in space. Beginners and experienced hackers are welcome, and you can join solo or with a team of up to 6. Spots are limited to 40 participants, and there's NASA merch to grab!",
-    date: "November 14 – 15, 2026",
-    time: "9:00 AM – 5:00 PM",
-    location: "THRN 1200, University of Guelph",
-    mediaSource: "/socis_rocketry.png",
-    slug: "nasa-space-apps-2026",
+      "Join us for an opportunity to connect with professors, learn about ongoing research projects, and network with faculty to explore potential research positions at the University of Guelph!",
+    date: "November 25, 2026",
+    time: "11:30 AM – 1:00 PM",
+    location: "REYN 1101, University of Guelph",
+    mediaSource: "/researchmixer.png",
+    slug: "research-mixer-2026",
     links: [
       {
         label: "SOCIS Discord",
@@ -80,6 +80,28 @@ export const upcomingEvents: Event[] = [
 ];
 
 export const pastEvents: Event[] = [
+  {
+    name: "SOCIS/Rocketry Club 2026: NASA Space Apps Challenge!",
+    description:
+      "Join SOCIS and the Rocketry Club for the 2026 NASA Space Apps Challenge! Spend 48 hours using NASA's open data to tackle real-world challenges on Earth and in space. Beginners and experienced hackers are welcome, and you can join solo or with a team of up to 6. Spots are limited to 40 participants, and there's NASA merch to grab!",
+    date: "November 14 – 15, 2026",
+    time: "9:00 AM – 5:00 PM",
+    location: "THRN 1200, University of Guelph",
+    mediaSource: "/socis_rocketry.png",
+    slug: "nasa-space-apps-2026",
+    links: [
+      {
+        label: "SOCIS Discord",
+        href: "https://discord.gg/gzYWRmsWYw",
+        type: "discord",
+      },
+      {
+        label: "Rocketry Club Discord",
+        href: "https://discord.gg/INVITE_CODE",
+        type: "discord",
+      },
+    ],
+  },
   {
     name: "Coding Competition 2026!",
     description:
